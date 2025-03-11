@@ -21,11 +21,18 @@
 
     <script type="text/babel">
         const Banner = () => {
+            const title = "Welcome to my website"
+            const subtitle = "This is a website for learning React!"
+            const address = "https://www.archlinux.org"
+
             return (
                 // This is a comment
                 <div className="banner">
-                    <p>banner</p>
-                    <div></div>
+                    <h2>{title.toUpperCase()}</h2>
+                    <p>{subtitle}</p>
+                    <p>Today's date is: {new Date().toDateString()}</p>
+                    <p>Random number: {Math.random() * 100}</p>
+                    <a href={address}>Visit the net ArchLinux</a>
                 </div>
             )
         }
